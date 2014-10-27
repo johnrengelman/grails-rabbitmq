@@ -9,7 +9,7 @@ grails.project.dependency.resolution = {
         // excludes 'ehcache'
     }
     log "warn" // log level of Ivy resolver, either 'error', 'warn', 'info', 'debug' or 'verbose'
-    repositories {        
+    repositories {
         grailsPlugins()
         grailsHome()
         grailsCentral()
@@ -17,7 +17,7 @@ grails.project.dependency.resolution = {
     }
     dependencies {
         // specify dependencies here under either 'build', 'compile', 'runtime', 'test' or 'provided' scopes eg.
-        runtime ('org.springframework.amqp:spring-rabbit:1.3.5.RELEASE') {
+        runtime ('org.springframework.amqp:spring-rabbit:1.1.3.RELEASE') {
             excludes 'junit',
                      'spring-aop',
                      'spring-core', // Use spring-core from Grails.
@@ -28,7 +28,7 @@ grails.project.dependency.resolution = {
                      'log4j'
         }
 
-        runtime 'org.springframework.retry:spring-retry:1.1.1.RELEASE'
+        runtime 'org.springframework.retry:spring-retry:1.0.0.RELEASE'
     }
 
     plugins {
